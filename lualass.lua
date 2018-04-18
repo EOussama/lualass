@@ -46,13 +46,25 @@ function Class:getType()
     return self.__type
 end
 
-function Class:tostring()
-    local info = self:getType() .. "{ "
+function Class:count()
+    local count = 0
 
     for k,v in pairs(self) do
-        info = info .. k .. " = " .. v .. ", "
+        count = count + 1
     end
-    
+
+    return count
+end
+
+function Class:tostring()
+    local separator = "" info = self:getType() .. " = { " props = self:count() count = 0
+
+    for k,v in pairs(self) do
+        count = count + 1
+        if count == props then separator = " " else separator = ", " end 
+        info = info .. k .. " = " .. v .. separator
+    end
+
     info = info .. "}"
     return info
 end
