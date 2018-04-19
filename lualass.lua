@@ -32,12 +32,12 @@ function Class:derive(class)
     assert(type(class) == "string", "[Lualass]: The class's name has to be a string")
 
     local derived = {}
-
+    
     setmetatable(derived, self)
-    derived["__call"] = self.__call
+    derived.__type = class;
     derived.__index = derived
     derived.super = self
-    derived.__type = class;
+    derived["__call"] = self.__call
 
     return derived;
 end
