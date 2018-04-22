@@ -11,6 +11,7 @@
 
                         @author:            Eoussama
                         @name:              lualass
+                        @version:           1.0.0
                         @created on:        4/18/2018
 ]]
 
