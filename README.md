@@ -11,13 +11,13 @@
 This is a very lightweight Lua module that helps simplify faking object-oriented programming, very easy and simple to use, almost plug'n play I'd say.
 
 ## Methods
-|Method         |Description                               |Usage                       |
-|---------------|------------------------------------------|----------------------------|
-|`derive(class)`|Derive a class based on another one       |`local Dog = Animal("Dog")` |
-|`getType()`    |Get the class's type (_name_)             |`Dog:getType()`             |
-|`is(class)`    |Check if a class is based on another one  |`Dog:is(Animal)`            |
-|`count()`      |Return the number of properties of a class|`Cat:count()`               |
-|`tostring()`   |Display a class's information             |`Animal:tostring()`         |
+|Method         |Description                               |Usage                              |
+|---------------|------------------------------------------|-----------------------------------|
+|`derive(class)`|Derive a class based on another one       |`local Dog = Animal:derive("Dog")` |
+|`getType()`    |Get the class's type (_name_)             |`Dog:getType()`                    |
+|`is(class)`    |Check if a class is based on another one  |`Dog:is(Animal)`                   |
+|`count()`      |Return the number of properties of a class|`Cat:count()`                      |
+|`tostring()`   |Display a class's information             |`Animal:tostring()`                |
 
 ## Samples
 ### I. **Creating a new class**
