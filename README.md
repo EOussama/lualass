@@ -1,13 +1,11 @@
 <p align="center">
     <h1 align="center">Lualass</h1>
-    
 </p>
----
 
 ## Table of content
-* [Description](#description)
-* [Methods](#methods)
-* [Samples](#samples)
+* [Description](#Description)
+* [Methods](#Methods)
+* [Samples](#Samples)
 
 ## Description
 This is a very lightweight Lua module that helps simplify faking object-oriented programming, very easy and simple to use, almost plug'n play I'd say.
