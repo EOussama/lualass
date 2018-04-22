@@ -30,7 +30,6 @@ end
 
 function Class:derive(class)
     assert(type(class) == "string", "[Lualass]: The class's name has to be a string")
-
     local derived = {}
     
     setmetatable(derived, self)
@@ -47,16 +46,15 @@ function Class:getType()
 end
 
 function Class:is(class)
+    assert(type(class) == "table", "[Lualass]: The class has to be a table")
     local currentCls = self
 
-    if class == currentCls:getType() then
+    if class:getType() == currentCls:getType() then
         return true
     else
         while currentCls:getType() ~= "Class" do
-            print(currentCls:getType(), class)
             currentCls = currentCls.super
-            
-            if class == currentCls:getType() then return true end
+            if class:getType() == currentCls:getType() then return true end
         end
     end
 
