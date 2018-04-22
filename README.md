@@ -3,9 +3,9 @@
 </p>
 
 ## Table of content
-* [Description](#Description)
-* [Methods](#Methods)
-* [Samples](#Samples)
+* [Description](#description)
+* [Methods](#methods)
+* [Samples](#samples)
 
 ## Description
 This is a very lightweight Lua module that helps simplify faking object-oriented programming, very easy and simple to use, almost plug'n play I'd say.
