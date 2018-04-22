@@ -78,7 +78,7 @@ function Class:tostring()
     for k,v in pairs(self) do
         count = count + 1
         if count == props then separator = " " else separator = ", " end 
-        info = info .. k .. " = " .. v .. separator
+        info = info .. k .. " = " .. tostring(v).. separator
     end
 
     info = info .. "}"
