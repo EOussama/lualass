@@ -46,6 +46,23 @@ function Class:getType()
     return self.__type
 end
 
+function Class:is(class)
+    local currentCls = self
+
+    if class == currentCls:getType() then
+        return true
+    else
+        while currentCls:getType() ~= "Class" do
+            print(currentCls:getType(), class)
+            currentCls = currentCls.super
+            
+            if class == currentCls:getType() then return true end
+        end
+    end
+
+    return false
+end
+
 function Class:count()
     local count = 0
 
